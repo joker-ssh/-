@@ -1,0 +1,40 @@
+<image class='img_cl' src='../../../img/bg.png' mode='widthFix' bindload="imageLoad"></image>
+<!-- <view class='tixian_box'>
+<view class='tixian_box_tit'>提现说明</view>
+<view class='tixian_box_li'>
+1.反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
+</view>
+<view class='tixian_box_li'>
+1.反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
+</view>
+</view> -->
+
+<view class='tab_box'>
+<block wx:for="{{data_time}}">
+<view data-index='{{index}}' bindtap='li_tab_btn' class='tab_li {{data_ii_f[index]== true ?"tab_li_on":""}}'>{{item.title}}</view>
+</block>
+</view>
+
+<!-- ---------2 -->
+<view class='cen_box'>
+<block wx:for="{{data_time}}">
+
+<view class='order_box {{data_ii_f[index]== true ?"dis":""}}'>
+<view class='order_box_tit'>
+有效订单<view bindtap='xiangqing_fn' data-index='{{index}}'>查看详情<image class='rig_img' src='../../../img/right.png'></image></view>
+</view>
+
+<view class='order_cen'>
+<view class='order_cen_li'>
+<view class='order_cen_li_num'>{{item.count}}</view>
+<view class='order_cen_li_tit'>预估有效订单</view>
+</view>
+<view class='xian'></view>
+<view class='order_cen_li'>
+<view class='order_cen_li_num'>{{item.money}}</view>
+<view class='order_cen_li_tit'>预估可返金额</view></view>
+</view></view>
+</block>
+
+
+</view>

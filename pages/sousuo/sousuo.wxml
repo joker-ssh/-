@@ -1,0 +1,75 @@
+
+<scroll-view class='scol' bindscrolltolower='jiazai' scroll-y='true'>
+<!--------搜索  -->
+<view class='beijin_'>
+
+ <view class='sousuo_in_box'>
+<view class='sousuo_in'>
+<image src="../../img/search.png" bindtap='sousuo_fn'></image>
+<input placeholder='输入您想要搜索的商品' placeholder-class='input_cla'  bindinput="sousuo_in" bindblur='sousuo_fn'></input>
+</view>
+</view> 
+
+<swiper autoplay="true" interval="3000" duration="300">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+    <view class='luhbo_box'>
+      <view class='luhbo_li'>
+          <view class='lun_img_box'>
+          <image src="{{item.url}}" class='lun_img'></image>
+          </view>
+          <image src="{{item.url}}" class='lunbo_xia'></image>
+          </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='paixu_box' style='display:none'><view class='paixu_box_li' bindtap='paixu' data-order='1'>默认<image src="../../img/paixu.png"></image></view><view class='paixu_box_li' bindtap='paixu' data-order='2'>劵后价<image src="../../img/paixu.png"></image></view><view class='paixu_box_li' bindtap='paixu' data-order='3'>优惠幅度<image src="../../img/paixu.png"></image></view><view class='paixu_box_li' bindtap='paixu' data-order='4'>销量<image src="../../img/paixu.png"></image></view></view>
+</view>
+<!-------专区  -->
+<view class='zhuangqus'>
+<view class='zhuangqu_box'>
+
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods}}" bindtap='xiangqing' data-type="{{item.goods_id}}" data-url="{{item.discount_link}}">
+<view class='yifu_box_li_lef'><image src="{{item.goods_img}}" mode='aspectFill'></image></view>
+<view class='yifu_box_li_rig'>
+<view class='yifu_box_li_rig_tit'>{{item.goods_name}}</view>
+<view class='yifu_box_li_rig_jia'>原价:￥<text class='qian_jia'>{{item.goods_price}}</text>
+<text class='truuu' style='display:none'>补贴:￥{{item.butie}}</text>
+<!-- <text class='truuu' wx:if="{{item.type==3}}">补贴:￥{{item.quanhoujia/2}}</text> -->
+</view>
+
+
+
+ <view class='xia_li'>
+
+<view class='juanbox'><view class='juan_img'><image src="../../img/bg2.png" mode='aspectFit'></image><text>劵后价</text></view>￥<text class='you_jia'>{{item.coupon_price}}</text></view>
+
+<button class='qianggou'>抢购</button>
+</view>
+
+
+</view>
+<view class='no_flo'></view>
+</view> 
+
+
+
+
+</view> 
+<view class='more_box' wx:if="{{jiazai_f==true}}"><image src='../../img/009.gif' background-size="cover"></image>加载中..</view>
+<view class='more_box' wx:if="{{gengduo==true}}">已无更多</view>
+<!-- <view class='more_box' wx:if="{{gengduo==false}}" bindtap='jiazai'>加载更多</view> -->
+</view>
+
+
+
+
+
+
+</view>
+</scroll-view>
+<view><include src="../gongbox/gong" /></view>

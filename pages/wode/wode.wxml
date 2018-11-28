@@ -1,0 +1,105 @@
+<view class='erwei_box' wx:if='{{erwei_box_f==true}}'>
+<view class='weweima_bl' bindtap='guanbi_ma_box'></view>
+<view class='erweima_cen'>
+<view class='erweima_cen_img'><image bindtap='img_yulan' mode='widthFix' src='{{erweimg}}'></image></view>
+<!-- <view class='erwei_btns'><button class='baocun_btn' bindtap='naocunerweima_fn'>保存</button><button bindtap='guanbi_ma_box'>取消</button></view> -->
+</view>
+</view>
+
+
+<view wx:if='{{wu_f==true}}' class='zanwu_list'>暂无订单</view>
+<view class='tan_box' wx:if='{{tan_f==true}}'>
+<view class='tixian_box tan_box_cen' wx:if='{{tixina_f==true}}'>
+<view class='tan_box_cen_in shuru_in'><text>￥</text><input bindinput="tian_shu_in"></input></view>
+<view class='tishi_'>提现金额最少为5元</view>
+<view class='tan_box_cen_in'><button class='btn_ tixian_btn' bindtap='tian_sure_btn'>申请</button><button class='btn_' bindtap='quxiao_tan_fn'>取消</button></view>
+</view>
+
+<view class='tixian_box tan_box_cen' wx:if='{{dengji_f==true}}'>
+<view class='tan_box_cen_in'><input value='{{orderid}}' style='padding-left:0' placeholder='输入订单号' bindinput="dengji_shu"></input></view>
+<view class='tan_box_cen_in tiahi_cuo'>{{cuowu_}}</view>
+<view class='tan_box_cen_in'><button class='btn_ tixian_btn' bindtap='dengji_sure_fn'>确定</button><button class='btn_' bindtap='quxiao_tan_fn'>取消</button></view>
+</view>
+<view bindtap='quxiao_tan_fn' class='quxiao_box'></view>
+
+</view>
+
+<view class='uesr_da'>
+<view class='user_box'>
+<view class='user_box_img' style='background-color:{{back_bl}}'>
+<image src='{{info.avatarUrl}}'></image><text>{{info.nickName}}</text>
+<view class='erweima_btn' bindtap='xiugai_fn'>修改信息</view>
+</view>
+<!-- <view class='info_list_'>{{info.nickName}}</view> -->
+<view wx:if='{{!info}}'><button class='denglu_btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button></view>
+<view class='info_list' wx:if='{{info}}'><image src='../../img/zhifu.png'></image>支付宝实名：{{zhifu_info.alipayname}}</view>
+<!-- <view class='info_list info_list_a' wx:if='{{info}}' style='display:none'><image src='../../img/user.png'></image>账户余额：{{zhifu_info.balance}}元</view> -->
+<view class='info_list info_list_b' wx:if='{{info}}'><image src='../../img/user.png'></image>支付宝账号：{{zhifu_info.alipay}}</view>
+<view style='clear:both'></view>
+<!-- <view class='erweima_list' wx:if='{{info}}'>
+<view class='erweima_btn erweima_btn_a' bindtap='erweima_btn' style='display:none'>生成二维码</view>
+</view> -->
+</view></view>
+
+
+
+<view wx:if='{{info}}' class='btns_box'>
+
+<view wx:if="{{lev==1 || lev==2}}">
+<view class='btn_list' bindtap='chakan_fn'><image src='../../img/wddingdan.png' class='order_img'></image><view>我的订单</view></view>
+<view class='btn_list'>
+<button class='' open-type="share"></button>
+<image src='../../img/tuiguang.png'></image>
+<view>分享</view>
+</view>
+<view class='btn_list' bindtap='wode_tuiguang_fn'>
+<image src='../../img/wdtuiguang.png'></image>
+<view>我的推广</view>
+</view>
+<view class='btn_list'>
+<button type='default' open-type="contact" session-from='{"nickname":"{{info.nickName}}","headimgurl":"{{info.avatarUrl}}"}'>客服</button>
+<image src='../../img/kefu.png'></image>
+<view>客服</view>
+</view>
+<view class='btn_list' bindtap='erweima_btn'>
+<image src='../../img/asdasdas.png'></image>
+<view>生成二维码</view>
+</view>
+<view style='clear:both'></view>
+</view>
+<view wx:else>
+<view class='btn_list btn_list_b' bindtap='chakan_fn'><image src='../../img/wddingdan.png' class='order_img'></image><view>我的订单</view></view>
+<view class='btn_list btn_list_b'>
+<button type='default' open-type="contact" session-from='{"nickname":"{{info.nickName}}","headimgurl":"{{info.avatarUrl}}"}'>客服</button>
+<image src='../../img/kefu.png'></image>
+<view>客服</view>
+</view>
+<view class='btn_list btn_list_b' bindtap='erweima_btn'>
+<image src='../../img/asdasdas.png'></image>
+<view>生成二维码</view>
+</view>
+<view style='clear:both'></view>
+</view>
+</view>
+
+<view class='ti_box'>
+
+<view class='tishi_box'>
+<view class='tishi_box_list'>温馨提示：</view>
+<view class='tishi_box_list'>2018年8月16日0：00：00-2018年8月20日23：59：59</view>
+<view class='tishi_box_list'>活动注意事项：</view>
+<view class='tishi_box_list'>1.同一个京东账户每天限购10单，活动期间最高30单。</view>
+<view class='tishi_box_list'>2.免单商品全部为拼购+优惠券的模式，券后价格为9.9元。用户下单付款金额必须为9.9元，低于9.9元活动无效；付款金额超过9.9元，只返9.9元。</view>
+<view class='tishi_box_list'>3.拼团商品，时间到了会有成功提示。</view>
+<view class='tishi_box_list'>4.单个商品请独立提交订单付款，多个商品加入购物车只能算一个订单。</view>
+<view class='tishi_box_list'>无效订单说明：</view>
+<view class='tishi_box_list'>一．乡村推广员、企业用户下单，视为无效订单。</view>
+<view class='tishi_box_list'>二．使用礼品、积分、京豆、E卡、京豆账户余额付款，视为无效订单。</view>
+<view class='tishi_box_list'>三．未付款、退款、退货订单，视为无效订单。</view>
+<view class='tishi_box_list'>四.参与其他团队的京东活动，视为无效订单</view>
+<view class='tishi_box_list'>免单补贴返款时间：</view>
+<view class='tishi_box_list'>2018年9月25日-10月10日，我们会将审核后的有效订单，按下单顺序依次将免单补贴打款到您填写的支付宝账号内【务必确认收款账号没有错误】</view>
+
+</view></view>
+
+<view><include src="../gongbox/gong" /></view>

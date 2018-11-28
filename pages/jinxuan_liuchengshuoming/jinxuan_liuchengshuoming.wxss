@@ -1,0 +1,87 @@
+.cenbox
+{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.kefu
+{
+  background-color:none;
+  color: red;
+  font-size: 30rpx;
+  text-align: center;
+}
+ .kefu button::after{
+border: none;
+} 
+.call
+{
+  position: fixed;
+  padding: 20rpx;
+  text-align: center;
+  right: 20rpx;
+  bottom: 100rpx;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 3px 1px #ddd;
+}
+.call view
+{
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 5rpx;
+}
+.kefu button
+{
+  background:none;
+  width: 200rpx;
+  height: auto !important;
+  font-size: 30rpx !important;
+  color: red !important;
+  border: none !important;
+  line-height: 35rpx;
+}
+.cenbox_tit
+{
+  text-align: center;
+}
+.cenbox_in
+{
+  text-align: center;
+  width: 80%;
+  margin: 40rpx auto;
+  margin-bottom: 10rpx;
+}
+.cenbox_in input
+{
+  font-size: 36rpx;
+  border-bottom: 1px solid #ddd;
+}
+.cenbox_in button
+{
+    width: 260rpx;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    color: white;
+    background-color: #f8a755;
+    font-size: 36rpx;
+    margin-bottom: 10rpx;
+}
+.tishi_box
+{
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.tishi_tit
+{
+  font-size: 34rpx;
+  color: #FF4351;
+}
+.tishi_list
+{
+  font-size: 32rpx;
+  color: #777;
+  margin: 10rpx 0;
+  letter-spacing: 2rpx;
+}

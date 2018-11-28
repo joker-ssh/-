@@ -1,0 +1,372 @@
+page
+{
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+swiper 
+{
+  height: 415rpx;
+}
+.luhbo_box
+{
+ box-sizing: border-box;
+padding: 20rpx;
+padding-bottom: 0;
+}
+.scol
+{
+  position: relative;
+  width: 100%;
+  padding-bottom: 30rpx;
+  min-height: 100%;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+   height: -moz-calc(100% - 100rpx); 
+	height: -webkit-calc(100% - 100rpx);
+	height: calc(100% - 100rpx);
+}
+.lun_img_box
+{
+    width: 100%;
+    height: 350rpx;
+    overflow: hidden;
+    border-radius: 10rpx;
+    position: relative;
+}
+.lun_img
+{
+  width: 100%;
+  height: 100%; 
+}
+.luhbo_li
+{
+  position: relative;
+  width: 100%;
+}
+.lunbo_xia
+{
+  position: absolute;
+  -webkit-filter: blur(15rpx);
+       -moz-filter: blur(15rpx);
+        -ms-filter: blur(15rpx);    
+            filter: blur(15rpx);
+          bottom:0;
+z-index:-1;
+width:60%;
+height:250rpx;
+margin-left:20%;
+}
+.lun_dian
+{
+  text-align: center;
+    line-height: 20rpx;
+    position: relative;
+    top:-40rpx;
+    opacity: 0.6;
+}
+.lun_dian_li{
+  width: 100rpx;
+  height: 20rpx;
+  display: inline-block;
+  background-color: #eee;
+  margin: 0 20rpx;
+  border-radius: 20rpx;
+}
+.lun_dian_li_on
+{
+  background-color:#ff9999;
+}
+/**-----搜索  */
+.sousuo_in_box
+{
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0 20rpx;
+}
+.sousuo_in
+{
+  box-shadow:0 0 60rpx 10rpx #eee;
+  padding: 30rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.sousuo_in input
+{
+  width: 100%;
+  position: relative;
+  padding-left: 80rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+  height: 80rpx;
+}
+.sousuo_in image
+{
+  width: 55rpx;
+  height: 55rpx;
+  position: absolute;
+  bottom: 40rpx;
+  left: 30rpx;
+  z-index: 99;
+}
+/*-------按钮  */
+.anniu_li
+{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.anniu_box
+{
+  width: 100%;
+  box-sizing: border-box;
+  margin:50rpx 0;
+}
+.anniu_li image
+{
+  width: 100rpx;
+  height: 100rpx;
+}
+.anniu_li view
+{
+  font-size: 28rpx;
+  color: #999;
+}
+/*---专区  */
+.zhuangqu_box
+{
+  border-radius: 10rpx;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 100rpx;
+}
+.zhuangqu_tit
+{
+   background: -webkit-linear-gradient(left, #f8a755 , #f87e7e); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f8a755, #f87e7e); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f8a755, #f87e7e); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f8a755 , #f87e7e); /* 标准的语法 */
+  width: 100%;
+  position: relative;
+  height: 120rpx;
+  text-align: right;
+  line-height: 120rpx;
+}
+.zhuangqu_tit image
+{
+   position: absolute;
+   height: 50rpx;
+   width: 200rpx;
+   top: 35rpx;
+   left: 35rpx;
+}
+.more_box
+{
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+  margin: 30rpx 0;
+}
+.zhuangqus
+{
+  width: 100%;
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 20rpx;
+  box-sizing: border-box;
+  padding-bottom: 100rpx;
+}
+
+/*-----------------  */
+.zhuangqu_box
+{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.yifu_box_li
+{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding:20rpx 0;
+}
+.yifu_box_li_lef
+{
+    width: 230rpx;
+    height: 230rpx;
+    float: left
+}
+.yifu_box_li_lef image
+{
+  width: 100%;
+  height: 100%;
+}
+.yifu_box_li_rig
+{
+  height: 230rpx;
+  float: left;
+  width: -moz-calc(100% - 230rpx); 
+	width: -webkit-calc(100% - 230rpx);
+	width: calc(100% - 230rpx);
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.yifu_box_li_rig_tit
+{
+    font-size: 30rpx;
+    overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.yifu_box_li_rig_jia
+{
+  font-size: 28rpx;
+  margin: 20rpx 0;
+  position: relative;
+  color: #666;
+}
+.juanbox
+{
+   position: absolute; 
+  left:0;
+  bottom: 10rpx;
+  color: #ff6666;
+}
+.qian_jia
+{
+  text-decoration: line-through;
+}
+.juan_img
+{
+  width: 70rpx;
+  height: 40rpx;
+  line-height: 35rpx;
+  position: relative;
+  color:white;
+  text-align: center;
+  display: inline-block;
+}
+.juan_img image
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.juan_img text
+{
+  position: relative;
+  z-index: 99;
+  font-size: 16rpx;
+  top: -4rpx;
+}
+.you_jia
+{
+  font-size: 40rpx;
+  position: relative;
+  top: 5rpx;
+      color: #ff6666;
+}
+.butie_box
+{
+  position: absolute;
+  bottom: 20rpx;
+  left:0;
+  color: #f8a775;
+   font-size: 30rpx;
+}
+.qianggou
+{
+    background: -webkit-linear-gradient(left, #f8a755 , #f87e7e); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f8a755, #f87e7e); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f8a755, #f87e7e); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f8a755 , #f87e7e); /* 标准的语法 */
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: white;
+  text-align: center;
+  font-size: 26rpx;
+  border-radius:50rpx;
+  margin: 0;
+  display: inline-block;
+}
+.xia_li
+{
+  text-align: right;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  padding-left: 0;
+}
+.more_box image
+{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.more_box
+{
+  line-height: 50rpx;
+}
+.paixu_box
+{
+  width: 100%;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.paixu_box_li
+{
+  float: left;
+  width: 25%;
+  text-align: center;
+  line-height: 100rpx;
+    background-color:white;
+    font-size: 30rpx;
+}
+.paixu_box_li image
+{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 5rpx;
+}
+
+.truuu
+{
+  color: red;
+  float: right;
+}
+.biaoqian_
+{
+  position:relative;
+color:white;
+font-size:22rpx;
+text-align:center;
+display:inline-block;
+padding:5rpx 20rpx;
+box-sizing:border-box;
+}
+.biaoqian_ image
+{
+  width:100%;
+height:100%;
+position:absolute;
+left:0;
+bottom:0;
+}
+.biaoqian_ text
+{
+position: relative;
+z-index: 99;
+}

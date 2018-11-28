@@ -1,0 +1,59 @@
+page{
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+.input_cla
+{
+  color: #ccc;
+}
+.no_flo
+{
+  clear: both;
+}
+.bottbox
+{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: white;
+  z-index:99999;
+  /* box-shadow: 0 0 3px 0px #ddd; */
+  box-sizing: border-box;
+   /* padding: 30rpx 0;  */
+  border-top: 1px solid #ddd
+}
+.bottbox_li
+{
+  width:25%;
+  display:inline-block;
+  font-size: 30rpx;
+  color: #666;
+  position: relative;
+   padding: 20rpx 0; 
+}
+.bottbox_li image
+{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  margin-right: 10rpx;
+  top: 4rpx;
+}
+.bottbox_li_xian
+{
+  border-left: 1rpx solid #ddd
+}
+.fasong_muban button
+{
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0;
+  z-index: 99;
+}

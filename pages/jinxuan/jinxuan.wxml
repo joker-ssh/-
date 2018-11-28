@@ -1,0 +1,21 @@
+
+<view wx:if='{{jiazai ==true}}' class='dabox'>
+<view class="imgbox"><image src="{{goods.goods_img}}" mode='aspectFit' bindtap='yu_img' data-img="{{goods.goods_img}}"></image></view>
+
+<view class='cenbox'>
+<view class='cenbox_tit'>{{goods.goods_name}}</view>
+<view class='redzi'>推荐理由：{{goods.goods_content}}</view>
+<view class='jiabox'>
+<view class='jiabox_rig'>
+<view class='juanjia'><view class='juanimg'><image src="../../img/bg2.png" mode='aspectFit'></image>劵后价</view>￥<text class='xianjia'>{{goods.coupon_price}}</text></view>
+<view class='butie'><view class='yuanjia'>原价:￥<text>{{goods.goods_price}}</text></view><view class='butie_vi'>补贴:￥{{goods.butie}}</view></view>
+
+</view>
+
+
+<!-- <view class='jiabox_lef' bindtap='lingjuan'><image src="../../img/bg1.png" mode='aspectFit'></image><view>领劵立省</view><view>{{goods.discount}}元</view></view> -->
+
+<view class='jiabox_lef' bindtap='lingjuan'><image src="../../img/bg1.png" mode='aspectFit'></image><view>领劵</view></view>
+</view>
+</view>
+</view>

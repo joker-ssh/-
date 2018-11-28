@@ -1,0 +1,9 @@
+<view class='cenbox'>
+<view class='order_box'>
+<view class='cenbox_list'>订单号（系统验证订单号后可以获得平台补助）</view>
+<view class='order_box_cen'><input placeholder='输入订单号' bindinput="dengji_shu"></input></view>
+<view class='beizhu_list'>{{beizhu}}</view>
+<view class='btn_list'><button class='btn_' bindtap='dengji_sure_fn'>确定</button></view>
+<view class='cenbox_list_'>注：</view>
+<view class='cenbox_list_'>订单数据是从商品官方获取，会有延时，请在下单后2小时后提交</view>
+</view></view>

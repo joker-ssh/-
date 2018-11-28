@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/zhuanlian/zhuanlian",
+    "pages/zhifubao_bangding/zhifubao_bangding",
+    "pages/xiangqing/xiangqing",
+    "pages/wode_orders/wode_orders",
+    "pages/wode_dengjidingdan/wode_dengjidingdan",
+    "pages/wode/wode",
+    "pages/wode/tuiguang/tuiguang",
+    "pages/wode/orders/orders",
+    "pages/sousuo/sousuo",
+    "pages/jinxuanfenqu/jinxuanfenqu",
+    "pages/jinxuan_liuchengshuoming/jinxuan_liuchengshuoming",
+    "pages/jinxuan/jinxuan",
+    "pages/guice/guice",
+    "pages/fenqu/fenqu",
+    "pages/fen_sousuo/fen_sousuo",
+    "pages/chaxun/chaxun",
+    "pages/gongbox/gong"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "红秀招",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  }
+}

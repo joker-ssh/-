@@ -1,0 +1,74 @@
+
+<!--------搜索  -->
+<view class='topbix'>
+<view class='tishi_'>订单号（订单状态验证有效可以获得平台补助，以T+1日下午15点的数据为准）</view>
+<view class='sousuo_in_box'>
+<view class='sousuo_in'>
+<image src="../../img/search.png" bindtap='sousuo_fn'></image>
+<input placeholder='请复制订单号到这里' placeholder-class='input_cla' bindinput="sousuo_in" bindblur='sousuo_fn'></input>
+</view></view>
+<!-- <view class='sousuo_btn_bx'><view class='sousuo_btn'>提交</view></view> -->
+</view>
+<view class='more_box' wx:if="{{jiazai_f==true}}"><image src='../../img/009.gif' background-size="cover"></image>搜索中..</view>
+<view class='cenbox' wx:if='{{goods_fa==true}}'>
+<view class='cenbox_tit'><text>订单号:{{goods.orderId}}</text>
+<view class='tit_lig' wx:if='{{goods.validCode==1}}'>订单状态:未知</view>
+<view class='tit_lig' wx:if='{{goods.validCode==2}}'>订单状态:无效-拆单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==3}}'>订单状态:无效-取消</view>
+<view class='tit_lig' wx:if='{{goods.validCode==4}}'>订单状态:无效-京东帮帮主订单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==5}}'>订单状态:无效-账号异常</view>
+<view class='tit_lig' wx:if='{{goods.validCode==6}}'>订单状态:无效-赠品类目不返佣</view>
+<view class='tit_lig' wx:if='{{goods.validCode==7}}'>订单状态:无效-校园订单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==8}}'>订单状态:无效-企业订单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==9}}'>订单状态:无效-团购订单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==10}}'>订单状态:无效-开增值税专用发票订单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==11}}'>订单状态:无效-乡村推广员下单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==12}}'>订单状态:无效-自己推广自己下单</view>
+<view class='tit_lig' wx:if='{{goods.validCode==13}}'>订单状态:待审核</view>
+<view class='tit_lig' wx:if='{{goods.validCode==14}}'>订单状态:无效-来源与备案网址不符</view>
+<view class='tit_lig' wx:if='{{goods.validCode==15}}'>订单状态:待付款</view>
+<view class='tit_lig' wx:if='{{goods.validCode==16}}'>订单状态:待审核</view>
+<view class='tit_lig' wx:if='{{goods.validCode==17}}'>订单状态:待结算</view>
+<view class='tit_lig' wx:if='{{goods.validCode==18}}'>订单状态:待结算</view>
+
+</view>
+<view class='cenbox_tit'><text>下单时间:{{goods.orderTime}}</text>
+<view class='tit_lig' wx:if='{{goods.orderEmt==1}}'>下单平台:PC</view>
+<view class='tit_lig' wx:if='{{goods.orderEmt==2}}'>下单平台:无线</view>
+</view>
+
+
+<view class='cen_list' wx:for="{{goods.goods}}">
+<view class='cen_list_lef'><image mode='aspectFit' src='{{item.imgUrl}}'></image></view>
+<view class='cen_list_rig'>
+<view class='cen_list_rigtit'>{{item.skuName}}<view style='float:right'>×{{item.skuNum}}</view></view>
+<view class='xia_b'>
+<view class='cen_list_yuan'>原价:<text>{{item.price}}</text></view>
+<view class='cen_list_shiji'>实际消费:{{item.payPrice}}</view>
+</view>
+</view>
+<view style='clear:both'></view>
+</view>
+
+<view class='xiaofei_zong'>总计消费:{{zongjia_}}</view>
+
+</view>
+
+<!--------  -->
+<!-- <view class='bottbox'>
+<view class='bottbox_li' bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image>搜索转链</view>
+<view class='bottbox_li' bindtap='chaxun'><image src='../../img/r32542.png' background-size="cover"></image>订单查询</view>
+<view class='bottbox_li' bindtap='wy_fn'><image src='../../img/dengji.png' background-size="cover"></image>我的</view>
+<view class='xian_'></view>
+<view class='xian_b'></view>
+</view> -->
+<view><include src="../gongbox/gong" /></view>
+
+
+<!-- <view class='bottbox'>
+<view class='bottbox_li' bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image>搜索转链</view>
+<view class='bottbox_li' bindtap='chaxun'><image src='../../img/r32542.png' background-size="cover"></image>订单查询</view>
+<view class='bottbox_li' bindtap='butieliucheng'><image src='../../img/dengji.png' background-size="cover"></image>订单登记</view>
+<view class='xian_'></view>
+<view class='xian_b'></view>
+</view> -->

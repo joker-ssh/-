@@ -1,0 +1,65 @@
+page
+{
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+.shuru{
+  font-size: 30rpx;
+}
+.cenbox_list_
+{
+    color: #999;
+  font-size: 14px;
+}
+.beizhu_list{
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin: 15rpx 0;
+}
+.cenbox
+{
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.cenbox_list
+{
+  font-size: 14px;
+  margin-top: 10rpx;
+}
+.order_box_cen
+{
+  width: 100%;
+  font-size:16px;
+  border-bottom: 1px solid #ddd;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  margin-top: 80rpx;
+}
+.order_box_cen input
+{
+  text-align: center;
+}
+.btn_list
+{
+  text-align: center;
+}
+.btn_
+{
+  width:30%;
+height:80rpx;
+text-align:center;
+line-height:80rpx;
+background-color:#f8a755;
+font-size:32rpx;
+margin: auto;
+margin-bottom:10rpx;
+color: white;
+display: inline-block;
+margin-top: 50rpx;
+
+}

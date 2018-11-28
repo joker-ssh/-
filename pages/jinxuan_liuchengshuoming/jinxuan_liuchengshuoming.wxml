@@ -1,0 +1,33 @@
+<view class='cenbox'>
+<view class='cenbox_tit'>订单登记</view>
+<view class='cenbox_in'><input placeholder='请输入订单号' bindinput="order_in" value='{{order_}}'></input></view>
+<view class='cenbox_in'><input placeholder='请输入支付宝账号' bindinput="zhanghao_in" value='{{zhanghao_}}'></input></view>
+<view class='cenbox_in'><input placeholder='请输入支付宝实名' bindinput="name_in" value='{{name_}}'></input></view>
+
+
+<!-- <view wx:if="{{!userInfo.openid && hasUserInfo ==false}}">
+<view class='cenbox_in'><button open-type="getUserInfo" bindgetuserinfo="getUserInfo">提交</button></view>
+</view> -->
+<view class='cenbox_in'><button bindtap='tijao_fn'>提交</button></view>
+<!-- <view class='kefu'><button open-type="contact">联系客服</button></view> -->
+</view>
+<view class='call'>
+<contact-button class='cBtn' type="default-dark" size="23" session-from="weapp"><view>联系客服</view></contact-button>
+</view>
+<!--  -->
+<view class='tishi_box'>
+<view class='tishi_tit'>京东订单佣金返款流程</view>
+<view class='tishi_tit'>【不与活动补贴叠加】：</view>
+<view class='tishi_list'>1. 请在上方输入框中输入订单号和返款支付宝。</view>
+<view class='tishi_list'>2. 登记订单后，我们将在24小时内将补贴返到您登记的支付宝账号内。</view>
+</view>
+<view class='tishi_box'>
+<view class='tishi_tit'>有效订单说明：</view>
+<view class='tishi_list'>1.5月18日以后在红秀招小程序内下单付款的商品。</view>
+<view class='tishi_list'>2.非企业用户订单。</view>
+<view class='tishi_list'>3.非乡村推广员及其发展的用户生成的订单【开通京东账号时不是通过他人的邀请链接注册的账户】。</view>
+<view class='tishi_list'>4.使用礼品、积分、余额、京豆、E卡付款抵扣的这部分金额不能享受佣金补贴。</view>
+<view class='tishi_list'>5.交易成功的订单，即未产生退换货、投诉、申述售后等导致交易不成功的行为。</view>
+<view class='tishi_list'>6.订单查询窗口输入订单编号查到对应订单信息，订单状态没有显示无效
+ 【订单状态下单两小时之后可以在后台查询】。</view>
+</view>

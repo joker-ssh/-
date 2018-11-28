@@ -1,0 +1,64 @@
+page
+{
+  box-sizing: border-box;
+}
+.tishi
+{
+  font-size:28rpx;
+  background-color: #f87e7e;
+  color: white;
+  padding: 40rpx;
+  padding-bottom:100rpx;
+}
+.list
+{
+  width: 100%;
+  text-align: center;
+  margin: 40rpx auto;
+}
+.list_tit
+{
+  text-align: left;
+  line-height: 50rpx;
+}
+.list_tit image
+{
+  width: 35rpx;
+  height:35rpx;
+  margin-right: 5rpx;
+}
+.cenbox
+{
+  padding: 40rpx;
+}
+.list_tishi
+{
+  color: #777;
+  font-size: 28rpx;
+  text-align: left;
+  margin: 20rpx 0;
+}
+.list_cen input
+{
+ border-radius: 5px;
+ background-color: #f3f3f3;
+ text-align: left;
+ font-size: 30rpx;
+ height: 80rpx;
+ margin-bottom: 40rpx;
+ padding: 0 20rpx;
+}
+.list_tit_b
+{
+  margin-bottom: 40rpx;
+}
+.queding_btn
+{
+  text-align: center;
+}
+.queding_btn button
+{
+  width: 60%;
+  color: white;
+   background-color: #f87e7e;
+}

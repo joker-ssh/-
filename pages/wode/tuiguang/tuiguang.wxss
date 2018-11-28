@@ -1,0 +1,112 @@
+page
+{
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+}
+.topbox
+{
+  width: 100%;
+  height: 370rpx;
+  background-color:#ff6666;
+  color: white;
+  text-align: center;
+  font-size: 50rpx;
+}
+.leiji{
+  position: relative;
+  top: 80rpx;
+}
+.lei_num
+{
+  position: relative;
+    top: 120rpx;
+}
+.fenxiang_tbn{
+  font-size: 32rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color:#f8a755;
+  width: 200rpx;
+  cursor: pointer;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 100rpx;
+  color: white;
+}
+.pai_box
+{
+  margin-top: 20rpx;
+  background-color:white;
+  width: 100%;
+  height:100rpx;
+  line-height: 100rpx;
+  position: relative;
+  text-align: center;
+}
+.pai_box_list
+{
+  float: left;
+  width: 50%;
+  cursor: pointer;
+  font-size: 32rpx;
+}
+.pai_box_list image
+{
+  width: 30rpx;
+  height: 30rpx;
+  position:relative;
+  top:4rpx;
+  margin-left: 5rpx;
+}
+.scol
+{
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+   height: -moz-calc(100% - 390rpx); 
+	height: -webkit-calc(100% - 390rpx);
+	height: calc(100% - 390rpx);
+  margin-top: 20rpx;
+}
+.topbox_list
+{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.cenlist{
+  padding:10rpx 20rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.cenlist_lef{
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.cenlist_lef image
+{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.cenlist_rig
+{
+  width: -moz-calc(100% - 100rpx); 
+	width: -webkit-calc(100% - 100rpx);
+	width: calc(100% - 100rpx);
+  float: right;
+}
+.name_list
+{
+  font-size:28rpx;
+  color: #777;
+}
+.no_fla
+{
+  clear: both;
+}

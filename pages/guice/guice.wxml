@@ -1,0 +1,2 @@
+<!--pages/guice/guice.wxml-->
+<image wx:for='{{imgUrls}}' class='img_cl' src='{{item.url}}' mode='widthFix' bindload="imageLoad" style="display:{{dis_d}}"></image>

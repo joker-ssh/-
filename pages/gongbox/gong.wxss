@@ -1,0 +1,44 @@
+.bottbox_li
+{
+  width: 25% !important;
+}
+.bottbox
+{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: white;
+  z-index:99999;
+  /* box-shadow: 0 0 3px 0px #ddd; */
+  box-sizing: border-box;
+   /* padding: 30rpx 0;  */
+  border-top: 1px solid #ddd
+}
+.bottbox_li
+{
+  width: 33.3333%;
+  display:inline-block;
+  font-size: 30rpx;
+  color: #666;
+   padding: 35rpx 0; 
+}
+.bottbox_li image
+{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  margin-right: 10rpx;
+  top: 4rpx;
+}
+.bottbox_li_xian
+{
+  border-left: 1rpx solid #ddd
+}
+
+
+.navigator-hover{
+  background: none !important;
+  opacity:1 !important;
+}

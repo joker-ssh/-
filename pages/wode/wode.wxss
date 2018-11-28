@@ -1,0 +1,373 @@
+page
+{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+  height: 100%;
+  overflow-y: scroll;
+}
+.erwei_box
+{
+   width: 100%;
+  height: 100%;
+  position: fixed;
+    z-index: 9999999;
+}
+.weweima_bl{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(000,000, 000, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.erweima_cen
+{
+  background-color: white;
+  border-radius: 20rpx;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  position: relative;
+  z-index: 99;
+  margin-top: 50rpx;
+  padding:50rpx 20rpx;
+  box-sizing: border-box;
+}
+.erweima_cen_img
+{
+  text-align: center;
+  width:500rpx;
+  height: 500rpx;
+  margin: auto;
+}
+.erweima_cen_img image
+{
+  width: 100%;
+}
+.erwei_btns{
+  text-align: center;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.erwei_btns button
+{
+  font-size: 26rpx;
+  width: 200rpx;
+  background-color: #ff6666;
+  color: white;
+}
+.erweima_list{
+  text-align: right;
+  padding: 20rpx;
+}
+.erweima_btn_a
+{
+  margin-right: 30rpx;
+}
+.erweima_btn{
+  color: #f8a755;
+  cursor: pointer;
+  background-color: white;
+  width: 160rpx;
+  text-align: center;
+  font-size:28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius:100rpx;
+  display: inline-block
+}
+/* ----------- */
+.btn_list_b
+{
+  width: 33.333% !important;
+}
+.btn_list
+{
+  width: 20%;
+  text-align: center;
+  float: left;
+  margin-top: 40rpx;
+  position: relative;
+}
+.btn_list button
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.btn_list view
+{
+  text-align: center;
+  font-size: 26rpx;
+  position: relative;
+  top: -20rpx;
+}
+.btn_list image
+{
+  width: 65rpx;
+  margin-bottom: 30rpx;
+  height: 65rpx;
+}
+.order_img
+{
+width: 50rpx !important;
+}
+.bottbox_li
+{
+  width: 25% !important;
+  padding:15rpx 0;
+}
+.zhuye{
+  color: white;
+  position: fixed;
+}
+.tuiguang_btn{
+  width: 100% !important;
+}
+.tishi_box
+{
+  padding:30rpx;
+  box-sizing: border-box;
+  padding-bottom: 130rpx;
+  color: #f87e7e;
+}
+.ti_box
+{
+  background-color: white;
+  margin-top: 30rpx;
+}
+.tishi_box_list
+{
+  color: #f87e7e;
+  font-size: 26rpx;
+  margin-bottom: 10rpx;
+}
+.tiahi_cuo
+{
+  color: red;
+  font-size:32rpx;
+  margin-top: 10rpx;
+}
+::-webkit-scrollbar  
+{  
+    width: 0px;  
+    height: 8px;  
+    background-color: #F5F5F5;  
+} 
+.quxiao_box
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.uesr_da
+{
+}
+.user_box
+{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+  background-color: white;
+ }
+.user_box_img
+{
+  text-align:left;
+overflow:hidden;
+background-color:white;
+padding:5rpx;
+box-sizing:border-box;
+margin:30rpx 10rpx;
+display: flex;
+align-items: center;
+}
+.user_box_img text
+{
+  color: #666666;
+  font-size:30rpx;
+  flex: 1;
+  margin-right: 30rpx;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.user_box_img image
+{
+  width:130rpx;
+  height:130rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+  border: 1px solid #ddd
+}
+.xiugai
+{
+  color: #f8a755;
+  float: right;
+  cursor: pointer;
+  background-color: white;
+  width: 160rpx;
+  text-align: center;
+  font-size:28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius:100rpx;
+}
+.info_list
+{
+  padding:0 20rpx;
+  box-sizing: border-box;
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  color: #666666;
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.info_list image
+{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.info_list_a
+{
+  text-align: right;
+}
+.info_list_b
+{
+  width: 100%;
+}
+.orders_box
+{
+  font-size: 32rpx;
+  text-align: center;
+  border-top: 1px dashed #ddd;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.order_list{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+button::after
+{
+  border: none;
+}
+.denglu_btn
+{
+   width:260rpx;
+height:80rpx;
+text-align:center;
+line-height:80rpx;
+background-color:#f8a755;
+font-size:36rpx;
+margin-bottom:10rpx;
+background: none;
+color: red;
+border: none;
+}
+.info_list_
+{
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx 0; 
+  color: #666;
+}
+.btn_
+{
+  width:30%;
+height:80rpx;
+text-align:center;
+line-height:80rpx;
+background-color:#f8a755;
+font-size:32rpx;
+margin-bottom:10rpx;
+color: white;
+display: inline-block;
+margin-top: 50rpx;
+}
+.chakan
+{
+  margin-left:5%;
+  margin-right:5%;
+}
+.tan_box
+{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(000, 000, 000, 0.5);
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+.tan_box_cen
+{
+  position: relative;
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding:30rpx;
+  top:200rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+.tan_box_cen_in input
+{
+  margin: auto;
+  margin-top: 20rpx;
+border-bottom: 1px solid #ddd;
+box-sizing: border-box;
+padding-left: 40rpx;
+font-size: 40rpx;
+height: 100rpx;
+line-height: 100rpx;
+}
+.shuru_in
+{
+  width: 300rpx;
+  position: relative;
+  margin: auto;
+}
+.tan_box_cen_in
+{
+  text-align: center;
+}
+.tan_box_cen_in text
+{
+  position: absolute;
+  left:0rpx;
+  font-size: 50rpx;
+  line-height: 100rpx;
+}
+.tixian_btn
+{
+  margin-right: 50rpx;
+}
+.tishi_
+{
+  font-size: 30rpx;
+  color: red;
+  text-align: center;
+  margin-top: 15rpx;
+}
+.btns_box
+{
+  background-color: white;
+  margin-top: 20rpx;
+}

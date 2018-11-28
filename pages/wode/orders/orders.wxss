@@ -1,0 +1,135 @@
+/* pages/wode/orders/orders.wxss */
+page{
+  background-color: #ffefea;
+  position: relative;
+  padding-top: 720rpx;
+}
+.img_cl
+{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.tixian_box
+{
+  background-color: white;
+  border-radius:10rpx;
+  position: relative;
+  padding:20rpx 30rpx;
+  box-sizing: border-box;
+}
+.tixian_box_tit{
+  text-align: center;
+  color: #ff9966;
+  font-size:40rpx;
+  letter-spacing:3rpx;
+  margin-bottom: 40rpx;
+}
+.tixian_box_li{
+ color: #ff9966;
+ font-size: 32rpx;
+ letter-spacing:3rpx;
+ line-height: 50rpx;
+ margin-bottom: 20rpx;
+}
+/* ----------------- */
+.cen_box{
+  position: relative;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.order_box{
+  background-color: white;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+  overflow: hidden;
+  display: none;
+}
+.order_box_tit{
+ background-color:#ff9966;
+ color: white;
+ padding:30rpx 20rpx; 
+ font-size: 36rpx;
+ letter-spacing: 3rpx;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.order_box_tit view
+{
+  font-size: 30rpx;
+}
+.rig_img
+{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left:15rpx;
+}
+/* ----------- */
+.order_cen
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+}
+.order_cen_li_num{
+  font-size:70rpx;
+  color:#ff9966;
+  text-align: center;
+  margin-bottom: 35rpx;
+}
+.order_cen_li_tit
+{
+  text-align: center;
+  color: #666666;
+  font-size: 34rpx;
+}
+.xian
+{
+  background-color: #eee;
+  width: 3rpx;
+  height: 180rpx;
+}
+.order_cen_li
+{
+  width: 50%;
+  padding: 3rpx;
+  box-sizing: border-box;
+}
+/* ----------- */
+.tab_box{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+.tab_li{
+  display: inline-block;
+  font-size: 34rpx;
+  padding: 0 30rpx;
+  border-radius: 5rpx;
+  margin-right: 20rpx;
+  text-align: center;
+  line-height: 70rpx;
+  cursor:pointer;
+  color: #666;
+}
+.tab_li_on{
+  background-color:rgba(255, 153, 102, 0.8);
+  color: white;
+}
+::-webkit-scrollbar  
+{  
+    width: 0;  
+    height: 0;  
+    background-color: #F5F5F5;  
+}
+.dis{
+  display:block;
+}

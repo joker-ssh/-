@@ -1,0 +1,32 @@
+<!-- <view class='cen_box' style='display:none'>
+
+
+<view class="list">绑定支付宝</view>
+<view class="list"><input placeholder='请输入支付宝账号' bindinput="zhanghao_in"></input></view>
+<view class="list"><input placeholder='请输入支付宝姓名' bindinput="name_in"></input></view>
+
+<view class="list"><button class='bangding_btn' bindtap='bangding_fn'>绑定</button></view>
+
+</view> -->
+<view class='tishi'>
+温馨提示：为了保证您能收到平台补贴金，请务必确认支付宝账号与真实姓名填写正确。
+</view>
+<view class='cenbox'>
+
+<view class='list'>
+<view class='list_tit'><image src='../../img/shoukuan.png'></image>收款支付宝</view>
+<view class='list_tishi'>温馨提示：为了保证您能收到平台补贴金，请务必确认支付宝账号与真实姓名填写正确。</view>
+<view class='list_cen'><input placeholder='请填写真实姓名' bindblur="name_out"></input></view>
+<view class='list_cen'><input placeholder='请输入支付宝账号' bindblur="zhanghao_out"></input></view>
+</view>
+
+<view class='list'>
+<view class='list_tit list_tit_b'><image src='../../img/lianxi.png'></image>联系手机号</view>
+
+<view class='list_cen'><input placeholder='请输入手机号' bindblur="shouji_out" type='number'></input></view>
+
+</view>
+
+</view>
+
+<view class='queding_btn'><button bindtap='bangding_fn'>确定</button></view>

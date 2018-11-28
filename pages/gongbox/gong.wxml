@@ -1,0 +1,32 @@
+<view class='bottbox'>
+<navigator url="../index/index" class='bottbox_li' hover-class="none">
+<view bindtap='zhuye_fn'><image src='../../img/zhuye.png' background-size="cover"></image><view>主页</view></view>
+</navigator>
+
+<navigator url="../zhuanlian/zhuanlian" class='bottbox_li' hover-class="none">
+<view bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image><view>搜索转链</view></view>
+</navigator>
+<navigator url="../guice/guice?ty=1" class='bottbox_li' hover-class="none">
+<view bindtap='shuomin'><image src='../../img/r32542.png' background-size="cover"></image><view>活动说明</view></view>
+</navigator>
+<view class='bottbox_li'>
+<form bind:submit="send_mess" report-submit="true" class='fasong_muban'>
+<input style='display:none' name='canshu' value='canshu'></input>
+  <button formType="submit">发送模板消息</button>
+ </form>
+<image src='../../img/wode.png' background-size="cover"></image><view>我的</view>
+</view>
+<!-- <view bindtap='zhuye_fn'><image src='../../img/zhuye.png' background-size="cover"></image><view>主页</view></view> -->
+<!-- <view class='bottbox_li' bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image><view>搜索转链</view></view> -->
+<!-- <view class='bottbox_li' bindtap='chaxun'><image src='../../img/r32542.png' background-size="cover"></image><view>订单查询</view></view> -->
+<!-- <view class='bottbox_li' bindtap='shuomin'><image src='../../img/r32542.png' background-size="cover"></image><view>活动说明</view></view>
+<view class='bottbox_li'>
+<form bind:submit="send_mess" report-submit="true" class='fasong_muban'>
+<input style='display:none' name='canshu' value='canshu'></input>
+  <button formType="submit">发送模板消息</button>
+ </form>
+<image src='../../img/wode.png' background-size="cover"></image><view>我的</view></view>
+<view class='xian_'></view>
+<view class='xian_b'></view> -->
+
+</view>

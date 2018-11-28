@@ -1,0 +1,36 @@
+<view class='topbox'>
+
+
+<view class='topbox_list'>
+<view class='leiji'>累计单数</view>
+<view class='lei_num'>{{dan_num}}</view>
+</view>
+<view class='topbox_list'>
+<view class='leiji'>累计人数</view>
+<view class='lei_num'>{{ren_num}}</view>
+</view>
+
+
+<button open-type="share" class='fenxiang_tbn'>去分享</button>
+</view>
+
+<view class='pai_box' style='display:none'>
+<view class='pai_box_list'>入住时间<image src='../../../img/paixu.png'></image></view>
+<view class='pai_box_list'>入住时间<image src='../../../img/paixu.png'></image></view>
+</view>
+
+
+<scroll-view class='scol' bindscrolltolower='jiazai' scroll-y='true'>
+<view class='cenlist' wx:for="{{order_lis}}">
+<view class='cenlist_lef'><image src='{{item.img}}'></image></view>
+
+<view class='cenlist_rig'>
+<view class='name_list'>{{item.username}}</view>
+<view class=''>单数：{{item.ordernum}}</view>
+
+</view>
+
+
+<view class='no_fla'></view>
+</view>
+</scroll-view>

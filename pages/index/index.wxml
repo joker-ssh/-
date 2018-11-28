@@ -1,0 +1,248 @@
+<view wx:if='{{!info}}' class='denglu_btn_box'><button class='denglu_btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button></view>
+
+
+<!-- --弹窗 -->
+<view class='tan_box' wx:if='{{tan_view_f}}'>
+<view class='tan_box_bl'></view>
+<view class='tan_box_in'><image mode='widthFix' src='{{gonggao_box}}'></image></view>
+<view class='tan_guan'><image bindtap='guan_tan_btn' mode='widthFix' src='../../img/180929151145.png'></image></view>
+</view>
+
+<!--------精选搜索  -->
+<view class='sousuo_in_box' wx:if="{{xianshi[4].display_flag==1}}">
+<view class='sousuo_in'>
+<image src="../../img/search.png" bindtap='sousuo_tiao'></image>
+<input placeholder='输入您想要搜索的商品' placeholder-class='input_cla' type='text' bindinput="sousuo_in" bindblur='sousuo_tiao'></input>
+</view></view>
+<!--------免单活动搜索  -->
+<view class='sousuo_in_box' wx:else>
+<view class='sousuo_in'>
+<image src="../../img/search.png" bindtap='fenqu_sousuo'></image>
+<input placeholder='输入您想要搜索的商品' placeholder-class='input_cla' type='text' bindinput="sousuo_in" bindblur='fenqu_sousuo'></input>
+</view></view>
+
+
+<!--------搜索  -->
+<!-- <view class='sousuo_in_box' wx:if="{{xianshi[0].display_flag==1}}">
+<view class='sousuo_in'>
+<image src="../../img/search.png" bindtap='sousuo_tiao'></image>
+<input placeholder='输入您想要搜索的商品' placeholder-class='input_cla' type='text' bindinput="sousuo_in" bindblur='sousuo_tiao'></input>
+</view></view> -->
+<!-- <view class='luhbo_box'>
+ <view class='luhbo_li'>
+    <view class='lun_img_box'>
+    <image src="../../img/1.jpg" class='lun_img'></image>
+    </view>
+    <image src="../../img/1.jpg" class='lunbo_xia'></image>
+    </view>
+</view> -->
+<swiper autoplay="true" interval="3000" duration="300">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+
+    <view class='luhbo_box' bindtap='lunbo_tap' data-url="{{item.link}}">
+
+      <view class='luhbo_li'>
+          <view class='lun_img_box'>
+          <image src="{{item.url}}" class='lun_img'></image>
+          </view>
+          <image src="{{item.url}}" class='lunbo_xia'></image>
+          </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+
+<!-- <view class='luhbo_box'> -->
+<!-- 
+<view class='lun_dian'>
+    <view class="lun_dian_li lun_dian_li_on"></view>
+    <view class="lun_dian_li"></view>
+    <view class="lun_dian_li"></view>
+  </view> -->
+
+<!-- </view> -->
+
+
+<!-- 按钮  -->
+
+<view class='anniu_box' style='display:none'>
+<view class='anniu_li' bindtap='fenqu' data-type="1"><image src="../../img/fan.png" background-size="cover"></image><view>高返专区</view></view>
+<view class='anniu_li' bindtap='binggou'><image src="../../img/hjrt.png" background-size="cover"></image><view>拼购专区</view></view>
+<view class='anniu_li' bindtap='fenqu' data-type="3"><image src="../../img/gnrgyher.png" background-size="cover"></image><view>半价专区</view></view>
+<view class='anniu_li' bindtap='fenqu' data-type="4"><image src="../../img/werer.png" background-size="cover"></image><view>特惠专区</view></view>
+</view>
+<view class='ge'></view>
+<view class='qu_cen qu_gai'>
+
+<!-------精选专区  -->
+<view class='zhuangqus' wx:if="{{xianshi[4].display_flag==1}}">
+<view class='zhuangqu_box'>
+<!-- <view class='zhuangqu_tit zhuangqu_tit_a' bindtap='butieliucheng'> -->
+<view class='zhuangqu_tit zhuangqu_tit_a'><text>精选专区</text>
+<image src='../../img/jinxuan.png' background-size="cover"></image><view wx:if="{{gngeduo_f_e==false}}" bindtap='jinxuanfenqu' data-type="1">查看更多>></view>
+</view>
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods}}">
+<view class='yifu_box_li_cen' bindtap='jinxuan' data-id="{{item.goods_id}}" data-url='{{item.discount_link}}'>
+<view class='yifu_box_li_imgbox'><image src="{{item.goods_img}}" class='yifu_img' mode='aspectFill'></image><view class='tu_biao tu_biao_a'>原价:￥<text class='qianjia'>{{item.goods_price}}</text></view></view>
+<view class='yifu_box_li_tit_vi'><view class='yifu_box_li_tit'>{{item.goods_name}}</view></view>
+
+<view class='gai_pri'>
+<view class='gai_pri_y'>原价:{{item.goods_price}}</view>
+<view class='gai_pri_q'>券后价:{{item.coupon_price}}</view>
+</view>
+<!-- <view class='yifu_box_li_price'><view class='yifu_box_li_price_lef'><image src="../../img/bg3.png"></image><text>劵后价:￥<text class='dazi_'>{{item.coupon_price}}</text></text></view><view class='yifu_box_li_price_rig' style='display:none'>补贴:￥{{item.butie}}</view></view> -->
+</view></view>
+
+</view>
+<view class='more_box' wx:if="{{gngeduo_f_e==true}}">暂无更多</view>
+<view class='more_box' wx:if="{{gngeduo_f_e==false}}" bindtap='jinxuanfenqu' data-type="1">点击查看更多</view>
+</view>
+
+</view>
+
+<!--111111111111111111111111 高反 -->
+   <view class='zhuangqus' wx:if="{{xianshi[0].display_flag==1}}">   
+  <!-- <view class='zhuangqus'>   -->
+
+<view class='zhuangqu_box'>
+<!-- <view class='zhuangqu_tit zhuangqu_tit_a' bindtap='huodongxiangqing' data-type="1"> -->
+<view class='zhuangqu_tit zhuangqu_tit_a'><text>高返专区</text>
+<image src='../../img/gaofan.png' background-size="cover"></image><view wx:if="{{gngeduo_f_a==false}}" bindtap='fenqu' data-type="1">查看更多>></view>
+</view>
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods_a}}" wx:for-index="idx">
+<view class='yifu_box_li_cen' bindtap='xiangqing' data-type="{{item.id}}">
+<view class='yifu_box_li_imgbox'><image src="{{item.imgUrl}}" class='yifu_img' mode='aspectFill'></image><view class='tu_biao tu_biao_a'>原价:￥<text class='qianjia'>{{item.unitPrice}}</text></view></view>
+<view class='yifu_box_li_tit_vi'><view class='yifu_box_li_tit'>{{item.goodsName}}</view></view>
+<view class='gai_pri'>
+<view class='gai_pri_y'>原价:{{item.unitPrice}}</view>
+<view class='gai_pri_q'>券后价:{{item.quanhoujia}}</view>
+</view>
+<!-- <view class='yifu_box_li_price'><view class='yifu_box_li_price_lef'><image src="../../img/bg3.png"></image><text>劵后价:￥<text class='dazi_'>{{item.quanhoujia}}</text></text></view><view class='yifu_box_li_price_rig'>补贴:￥{{item.butie}}</view></view> -->
+</view></view>
+
+</view>
+<view class='more_box' wx:if="{{gngeduo_f_a==true}}">暂无更多</view>
+<view class='more_box' wx:if="{{gngeduo_f_a==false}}" bindtap='fenqu' data-type="1">点击查看更多</view>
+</view>
+
+</view>
+<!--  -->
+
+
+
+<!--2222222222222222222222  -->
+<view class='zhuangqus' wx:if="{{xianshi[1].display_flag==1}}">
+<view class='zhuangqu_box'>
+<!-- <view class='zhuangqu_tit zhuangqu_tit_b' bindtap='huodongxiangqing' data-type="2"> -->
+<view class='zhuangqu_tit zhuangqu_tit_b'><text>拼购专区</text>
+<image src='../../img/23423.png' background-size="cover"></image><view wx:if="{{gngeduo_f_b==false}}" bindtap='fenqu' data-type="2">查看更多>></view>
+</view>
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods_b}}" wx:for-index="idx">
+<view class='yifu_box_li_cen' bindtap='xiangqing' data-type="{{item.id}}">
+<view class='yifu_box_li_imgbox'><image src="{{item.imgUrl}}" class='yifu_img' mode='aspectFill'></image><view class='tu_biao tu_biao_b'>原价:￥<text class='qianjia'>{{item.unitPrice}}</text></view></view>
+<view class='yifu_box_li_tit_vi'><view class='yifu_box_li_tit'>{{item.goodsName}}</view></view>
+<view class='gai_pri'>
+<view class='gai_pri_y'>原价:{{item.unitPrice}}</view>
+<view class='gai_pri_q'>券后价:{{item.quanhoujia}}</view>
+</view>
+<!-- <view class='yifu_box_li_price'><view class='yifu_box_li_price_lef'><image src="../../img/bg3.png"></image><text>劵后价:￥<text class='dazi_'>{{item.quanhoujia}}</text></text></view><view class='yifu_box_li_price_rig'>补贴:￥{{item.butie}}</view></view> -->
+</view></view>
+
+</view>
+<view class='more_box' wx:if="{{gngeduo_f_b==true}}">暂无更多</view>
+<view class='more_box' wx:if="{{gngeduo_f_b==false}}" bindtap='fenqu' data-type="2">点击查看更多</view>
+</view>
+
+</view>
+<!--  -->
+
+<!-- 33333333333333333333 -->
+<view class='zhuangqus' wx:if="{{xianshi[2].display_flag==1}}">
+<view class='zhuangqu_box'>
+<!-- <view class='zhuangqu_tit zhuangqu_tit_c' bindtap='huodongxiangqing' data-type="3"> -->
+<view class='zhuangqu_tit zhuangqu_tit_c'><text>半价专区</text>
+<image src='../../img/www.png' background-size="cover"></image><view wx:if="{{gngeduo_f_c==false}}" bindtap='fenqu' data-type="3">查看更多>></view>
+</view>
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods_c}}" wx:for-index="idx">
+<view class='yifu_box_li_cen' bindtap='xiangqing' data-type="{{item.id}}">
+<view class='yifu_box_li_imgbox'><image src="{{item.imgUrl}}" class='yifu_img' mode='aspectFill'></image><view class='tu_biao tu_biao_c'>原价:￥<text class='qianjia'>{{item.unitPrice}}</text></view></view>
+<view class='yifu_box_li_tit_vi'><view class='yifu_box_li_tit'>{{item.goodsName}}</view></view>
+<view class='gai_pri'>
+<view class='gai_pri_y'>原价:{{item.unitPrice}}</view>
+<view class='gai_pri_q'>券后价:{{item.quanhoujia}}</view>
+</view>
+<!-- <view class='yifu_box_li_price'><view class='yifu_box_li_price_lef'><image src="../../img/bg3.png"></image><text>劵后价:￥<text class='dazi_'>{{item.quanhoujia}}</text></text></view><view class='yifu_box_li_price_rig'>补贴:￥{{item.butie}}</view></view> -->
+</view></view>
+
+</view>
+<view class='more_box' wx:if="{{gngeduo_f_c==true}}">暂无更多</view>
+<view class='more_box' wx:if="{{gngeduo_f_c==false}}" bindtap='fenqu' data-type="3">点击查看更多</view>
+</view>
+
+</view>
+<!--  -->
+<!-- 44444444444444 -->
+<view class='zhuangqus' wx:if="{{xianshi[3].display_flag==1}}">
+<view class='zhuangqu_box'>
+<!-- <view class='zhuangqu_tit zhuangqu_tit_d' bindtap='huodongxiangqing' data-type="4"> -->
+<view class='zhuangqu_tit zhuangqu_tit_d'><text>特惠专区</text>
+<image src='../../img/bdsgfs.png' background-size="cover"></image><view wx:if="{{gngeduo_f_d==false}}" bindtap='fenqu' data-type="4">查看更多>></view>
+</view>
+
+<view class='yifu_box'>
+
+<view class='yifu_box_li' wx:for="{{goods_d}}" wx:for-index="idx">
+<view class='yifu_box_li_cen' bindtap='xiangqing' data-type="{{item.id}}">
+<view class='yifu_box_li_imgbox'><image src="{{item.imgUrl}}" class='yifu_img' mode='aspectFill'></image><view class='tu_biao tu_biao_d'>原价:￥<text class='qianjia'>{{item.unitPrice}}</text></view></view>
+<view class='yifu_box_li_tit_vi'><view class='yifu_box_li_tit'>{{item.goodsName}}</view></view>
+<view class='gai_pri'>
+<view class='gai_pri_y'>原价:{{item.unitPrice}}</view>
+<view class='gai_pri_q'>券后价:{{item.quanhoujia}}</view>
+</view>
+<!-- <view class='yifu_box_li_price'><view class='yifu_box_li_price_lef'><image src="../../img/bg3.png"></image><text>劵后价:￥<text class='dazi_'>{{item.quanhoujia}}</text></text></view><view class='yifu_box_li_price_rig'></view></view> -->
+</view></view>
+
+</view>
+<view class='more_box' wx:if="{{gngeduo_f_d==true}}">暂无更多</view>
+<view class='more_box'  wx:if="{{gngeduo_f_d==false}}" bindtap='fenqu' data-type="4">点击查看更多</view>
+</view>
+
+</view>
+<!--  -->
+</view>
+
+
+
+
+
+<view><include src="../gongbox/gong" /></view>
+<!-- <view class='bottbox'>
+<view class='bottbox_li' bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image>搜索转链</view>
+<view class='bottbox_li' bindtap='chaxun'><image src='../../img/r32542.png' background-size="cover"></image>订单查询</view>
+<view class='bottbox_li' bindtap='wy_fn'><image src='../../img/dengji.png' background-size="cover"></image>我的</view>
+<view class='xian_'></view>
+<view class='xian_b'></view>
+</view> -->
+
+<!-- <view class='bottbox'>
+<view class='bottbox_li' bindtap='zhuanglian'><image src='../../img/adasd.png' background-size="cover"></image>搜索转链</view>
+<view class='bottbox_li' bindtap='chaxun'><image src='../../img/r32542.png' background-size="cover"></image>订单查询</view>
+<view class='bottbox_li' bindtap='butieliucheng'><image src='../../img/r32542.png' background-size="cover"></image>订单登记</view>
+<view class='xian_'></view>
+</view> -->

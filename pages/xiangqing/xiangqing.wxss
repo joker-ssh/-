@@ -1,0 +1,132 @@
+page
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.imgbox{
+  width: 100%;
+  height: 600rpx;
+  /* background-color: rgba(000,000,000,0.7); */
+}
+.imgbox image
+{
+  width: 100%;
+  height: 100%;
+}
+.cenbox{
+  position: relative;
+  box-sizing: border-box;
+  padding: 50rpx;
+  min-height: -moz-calc(100% - 600rpx); 
+	min-height: -webkit-calc(100% - 600rpx);
+	 min-height: calc(100% - 600rpx);
+}
+.cenbox_tit
+{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20rpx;
+  font-size: 30rpx;
+}
+.redzi
+{
+  color: red;
+  font-size: 24rpx;
+  margin: 10rpx 0;
+}
+.jiabox
+{
+  margin: 30rpx 0;
+  /* overflow: hidden; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50rpx;
+}
+.yuanjia
+{
+  color: #666;
+  float: left;
+}
+.yuanjia text
+{
+text-decoration: line-through;
+}
+.juanjia
+{
+  /* float: right; */
+  position: relative;
+  color: #f87e7e;
+}
+.yuanjia
+{
+  display: inline-block;
+}
+.butie_vi
+{
+  float: right;
+  margin-right: 40rpx;
+}
+.juanimg
+{
+  width: 100rpx;
+  position: relative;
+  height: 40rpx;
+  color: white;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  float: left;
+}
+.juanimg image
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.jiabox_lef
+{
+  float: right;
+width:150rpx;
+height:110rpx;
+color:white;
+font-size:32rpx;
+text-align:center;
+line-height:110rpx;
+top:0;
+right:20rpx;
+position: relative;
+}
+.jiabox_lef image
+{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.jiabox_rig
+{
+  line-height: 40rpx;
+  font-size: 32rpx;
+  width: -moz-calc(100% - 220rpx); 
+	width: -webkit-calc(100% - 220rpx);
+	 width: calc(100% - 220rpx);
+   float: left;
+}
+.xianjia
+{
+  font-size:50rpx;
+}
+.butie
+{
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: #f8a775
+}
